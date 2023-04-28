@@ -1,0 +1,253 @@
+/*reset stylów przeglądarki*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*globalne style tekstu*/
+
+body{
+	font-family: Calibri, Arial, sans-serif;
+	line-height: 1.7;
+	font-style: italic;
+
+}
+/* style nagłówków i tekstu*/
+.top {
+	height: 60px;
+	background: #8ddbff;
+	border: 2px solid darkgreen;
+	color: red;
+	}
+
+.logo a {
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30px;
+	float: left;
+	line-height: 60px;
+	padding-left: 50px;
+}
+.head {
+	float: right;
+	
+	}
+.head li {
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	float: left;
+	line-height: 60px;
+	padding: 0 15px;
+}
+
+
+/* centrowanie tekstu */
+
+.center-text {
+	text-align: center;
+}
+
+/* style opisu celu strony */
+
+.target {
+	background: #EEE8AA;
+	border: 2px solid darkgreen;
+	height: 400px;
+	background: url("20211020_124101.jpg");
+	background-size:100% 100%;
+	font-weight: bold;
+	margin: 20px auto;
+	}
+.target h1 {
+	font-size: 3em;
+	color: darkgreen;
+	margin-top: 10px;
+	}
+.target h3 {
+	font-size: 2em;
+	color: red;
+	padding: 10px 10px;
+	}
+
+/* style pól wprowadzania i wyszukiwania */
+
+.menu {
+	font-size: 1em;
+	color: darkblue;
+	margin-left: 10px;
+	padding: 20px;
+	margin: 0 auto;
+	
+}
+	
+	/* dodatkowe opcje- ramka w ramach sekcji */
+	/*
+	max-width: 1400px;
+	border: 2px solid darkgreen;
+	background: url("20211020_114152.jpg");
+	background-size:100% 100%;
+	*/
+
+
+.menu-title {
+	font-size: 2em;
+	color: darkblue;
+	font-weight: bold;
+}
+/* styl stopki */
+
+.footer {
+	font-weight: bold;
+	font-size: 1em;
+	color: darkblue;
+	background: yellowgreen;
+	border: 2px solid darkgreen;
+	}
+
+/*zdjęcia */
+
+.picture {
+	width: 600px;
+	height: 350px;
+}
+
+.picture-one-half {
+	background: url("20211020_115326.jpg");
+	background-size:100% 100%;
+}
+
+.picture-one-third {
+	background: url("20211020_114152.jpg");
+	background-size:100% 100%;
+}
+/*style kolumn, kontenerów */
+
+/*.col-one-half {
+	width: 50%;
+	float: left;
+	position: relative;
+		left: 80px;
+		right: 20px;
+
+			}
+
+.col-one-third {
+	width: 33%;
+	float: left;
+	position: relative;
+		left: 40px;
+		right: 20px;
+	}*/
+
+/*zapytanie o media - dostosowanie wyświetlania do różnych rozdzielczości */
+
+.col-one-third .col-one-half {
+	width: 100%;
+	float: none;
+}
+@media screen and (min-width: 960px) {
+
+	.col-one-half {
+		width: 45%;
+		float: left;
+					}
+
+	.col-one-third {
+		width: 27%;
+		float: left;
+					}
+
+/* przyciski */
+
+.button {
+	display: inline-block;
+	font-size: 1em;
+	text-align: center;
+	padiing: 10px 20px;
+	margin: 15px 0;
+	text-transform: uppercase;
+	border-radius: 5px;
+	margin-left: 650px;
+	margin-top: 50px;
+	width: 30%;
+	height: 40px;
+	font-weight: bold;
+		}
+.button-light {
+	background: #cbf039;
+	color: darkblue;
+	}
+
+.button-dark {
+	background: #093EAA;
+	color: white;
+}
+
+/*style podstawowe*/
+
+section {
+	clear: both;
+	padding: 20px 0;
+	overflow: auto;
+}
+input {
+	font-size: 1em;
+	font-weight: bold;
+	background: #87CEFA;
+	width: 50%;
+	padding: 8px;
+	border: 2px solid blue;
+	margin-right: 20px;
+	margin-left: 60px;
+	border-radius: 3px;
+	float: right;
+}
+
+label {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-left: 140px;
+	margin-right: 60px;
+}
